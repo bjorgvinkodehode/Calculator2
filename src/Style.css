@@ -1,0 +1,126 @@
+:root {
+  font-family: 'League Spartan', sans-serif;
+
+  /* colors for Backgrounds Theme 1 */
+  --clr-Verydarkdesaturatedbluemainbackground: hsl(222, 26%, 31%);
+  --clr-Verydarkdesaturatedbluetogglebackgroundkeypadbackground: hsl(
+    223,
+    31%,
+    20%
+  );
+  --clr-Verydarkdesaturatedbluescreenbackground: hsl(224, 36%, 15%);
+
+  /* colors for Keys */
+  --clr-Desaturateddarkbluekeybackground: hsl(225, 21%, 49%);
+  --clr-Desaturateddarkbluekeyshadow: hsl(224, 28%, 35%);
+
+  --clr-Redkeybackgroundtoggle: hsl(6, 63%, 50%);
+  --clr-Darkredkeyshadow: hsl(6, 70%, 34%);
+
+  --clr-Lightgrayishorangekeybackground: hsl(30, 25%, 89%);
+  --clr-Grayishorangekeyshadow: hsl(28, 16%, 65%);
+
+  /* colors for text */
+  --clr-Verydarkgrayishblue: hsl(221, 14%, 31%);
+  --clr-White: hsl(0, 0%, 100%);
+
+  /* colors for Backgrounds Theme 2 */
+  --clr-Lightgraymainbackground: hsl(0, 0%, 90%);
+  --clr-Grayishredtogglebackgroundkeypadbackground: hsl(0, 5%, 81%);
+  --clr-Verylightgrayscreenbackground: hsl(0, 0%, 93%);
+
+  /* colors for Keys */
+  --clr-Darkmoderatecyankeybackground: hsl(185, 42%, 37%);
+  --clr-Verydarkcyankeyshadow: hsl(185, 58%, 25%);
+
+  --clr-Orangekeybackgroundtoggle: hsl(25, 98%, 40%);
+  --clr-Darkorangekeyshadow: hsl(25, 99%, 27%);
+
+  --clr-Lightgrayishyellowkeybackground: hsl(45, 7%, 89%);
+  --clr-Darkgrayishorangekeyshadow: hsl(35, 11%, 61%);
+
+  /* colors for text */
+  --clr-Verydarkgrayishyellow: hsl(60, 10%, 19%);
+
+  /* colors for Backgrounds Theme 2 */
+  --clr-Verydarkvioletmainbackground: hsl(268, 75%, 9%);
+  --clr-Verydarkviolettogglebackgroundkeypadbackgroundscreenbackground: hsl(
+    268,
+    71%,
+    12%
+  );
+
+  /* colors for Keys */
+  --clr-Darkvioletkeybackground: hsl(281, 89%, 26%);
+  --clr-Vividmagentakeyshadow: hsl(285, 91%, 52%);
+
+  --clr-Purecyankeybackgroundtoggle: hsl(176, 100%, 44%);
+  --clr-Softcyankeyshadow: hsl(177, 92%, 70%);
+
+  --clr-Verydarkvioletkeybackground: hsl(268, 47%, 21%);
+  --clr-Darkmagentakeyshadow: hsl(290, 70%, 36%);
+
+  /* colors for text */
+  --clr-Lightyellow: hsl(52, 100%, 62%);
+  --clr-Verydarkblue: hsl(198, 20%, 13%);
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  --font-size: 32px; /* numbers */
+
+  
+
+a {
+  font-weight: 700;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--clr-Desaturateddarkbluekeybackground);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
