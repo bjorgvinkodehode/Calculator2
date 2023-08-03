@@ -45,7 +45,7 @@
   /* colors for text */
   --clr-Verydarkgrayishyellow: hsl(60, 10%, 19%);
 
-  /* colors for Backgrounds Theme 2 */
+  /* colors for Backgrounds Theme 3 */
   --clr-Verydarkvioletmainbackground: hsl(268, 75%, 9%);
   --clr-Verydarkviolettogglebackgroundkeypadbackgroundscreenbackground: hsl(
     268,
@@ -73,12 +73,12 @@
   
 
 .calculator-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  max-width: 300px;
-  margin: 0 auto;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 
 .output {
   grid-column: span 4;
@@ -89,18 +89,26 @@
   background-color: var(--clr-Verydarkdesaturatedbluescreenbackground);
   padding: 10px;
   border-radius: 5px;
-  max-width: 300px;
+  overflow: hidden;
 }
 
 .previous-operand {
   font-size: var(--font-size);
   color: var(--clr-White);
+  text-overflow: ellipsis; /* Show ellipsis (...) if text overflows */
+  white-space: nowrap; /* Prevent line breaks */
 }
 
 .current-operand {
   font-size: var(--font-size);
   color: var(--clr-White);
+  text-overflow: ellipsis; /* Show ellipsis (...) if text overflows */
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 3px;
+  max-width: 280px;
+
 }
+
 
 button {
   display: flex;
@@ -111,7 +119,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 15px 10px;
+  padding: 10px 10px;
 }
 
 .button-container {
@@ -119,8 +127,9 @@ button {
   justify-content: center;
 }
 
-.span-two {
+.button-span-two {
   grid-column: span 2;
 }
+
 
 

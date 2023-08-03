@@ -171,17 +171,17 @@
        <OperationButton operation="÷" dispatch={dispatch} />
        <OperationButton operation="*" dispatch={dispatch} />
        <button
-         className="span-two"
-         onClick={() => dispatch({ type: ACTIONS.CLEAR })}
-       >
-         Reset
-       </button>
-       <button
-         className="span-two"
-         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
-       >
-         =
-       </button>
+            className="button-span-two" /* Update the class name to button-span-two */
+            onClick={() => dispatch({ type: ACTIONS.CLEAR })}
+          >
+            Reset
+          </button>
+          <button
+            className="button-span-two" /* Update the class name to button-span-two */
+            onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
+          >
+            =
+      </button>
      </div>
    );
  }
