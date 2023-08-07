@@ -93,18 +93,21 @@
   background-color: var(
     --clr-Theme1Verydarkdesaturatedbluetogglebackgroundkeypadbackground
   );
-  padding: 50px;
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column: span 4;
-  gap: 30px;
-  max-width: 300px;
-  margin: 0 auto;
+  gap: 10px;
+  border-radius: 5px;
+}
+button {
+  box-shadow: 0px 1px 0px var(--clr-Theme1Grayishorangekeyshadow);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .button-span-two {
   grid-column: span 2;
-  border: 1px solid red;
 }
 
 .previous-operand {
