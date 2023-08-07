@@ -98,11 +98,16 @@
   overflow: hidden;
 }
 
+h3 {
+  color: var(--clr-White);
+}
+
 .buttons {
   background-color: var(
     --clr-Theme1Verydarkdesaturatedbluetogglebackgroundkeypadbackground
   );
-  padding: 10px;
+  color: var(--clr-Theme1Verydarkgrayishblue);
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column: span 4;
@@ -113,6 +118,7 @@
 button {
   box-shadow: 0px 1px 0px var(--clr-Theme1Grayishorangekeyshadow);
   padding: 10px;
+
   border-radius: 5px;
 }
 
