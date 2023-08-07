@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
 :root {
   font-family: "League Spartan", sans-serif;
   background-color: var(--clr-Theme1Verydarkdesaturatedbluemainbackground);
@@ -100,6 +109,7 @@
   gap: 10px;
   border-radius: 5px;
 }
+
 button {
   box-shadow: 0px 1px 0px var(--clr-Theme1Grayishorangekeyshadow);
   padding: 10px;
