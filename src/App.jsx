@@ -3,6 +3,7 @@
  import DigitButton from "./DigitButton";
  import OperationButton from "./OperationButton";
  import "./style.css";
+ import ThemeSelector from './components/ThemeSelector';
  
  export const ACTIONS = {
    ADD_DIGIT: "add-digit",
@@ -146,8 +147,11 @@
  
    return (
      <div className="calculator-grid">
-      <h3>calc</h3>
-      <radiobutton>Theme</radiobutton>
+      <div className="theme">
+        <h3 className="calc">calc</h3>
+        <h3 className="theme">Theme</h3>
+        <ThemeSelector />
+      </div>
        <div className="output">
          <div className="previous-operand">
            {formatOperand(previousOperand)} {operation}
