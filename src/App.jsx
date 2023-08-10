@@ -116,10 +116,10 @@
      case "-":
        computation = prev - current;
        break;
-     case "*":
+     case "x":
        computation = prev * current;
        break;
-     case "÷":
+     case "/":
        computation = prev / current;
        break;
      default:
@@ -162,7 +162,7 @@
        <DigitButton digit="7" dispatch={dispatch} />
        <DigitButton digit="8" dispatch={dispatch} />
        <DigitButton digit="9" dispatch={dispatch} />
-       <button onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
+       <button className="del" onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
          DEL
        </button>
        
@@ -176,16 +176,16 @@
        <OperationButton operation="-" dispatch={dispatch} />
        <DigitButton digit="." dispatch={dispatch} />
        <DigitButton digit="0" dispatch={dispatch} />
-       <OperationButton operation="÷" dispatch={dispatch} />
-       <OperationButton operation="*" dispatch={dispatch} />
+       <OperationButton operation="/" dispatch={dispatch} />
+       <OperationButton operation="x" dispatch={dispatch} />
        <button
-            className="button-span-two" 
+            className="button-span-two-blue" 
             onClick={() => dispatch({ type: ACTIONS.CLEAR })}
           >
-            Reset
+            RESET
           </button>
           <button
-            className="button-span-two" /* Update the class name to button-span-two */
+            className="button-span-two-red"
             onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
           >
             =
