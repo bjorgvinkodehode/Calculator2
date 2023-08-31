@@ -1,4 +1,5 @@
-import React from "react";
+
+import PropTypes from "prop-types"; // Import PropTypes
 
 const DigitButton = ({ digit, dispatch }) => {
   return (
@@ -6,6 +7,11 @@ const DigitButton = ({ digit, dispatch }) => {
       {digit}
     </button>
   );
+};
+
+DigitButton.propTypes = {
+  digit: PropTypes.string.isRequired,
+  dispatch: PropTypes.func.isRequired,
 };
 
 export default DigitButton;

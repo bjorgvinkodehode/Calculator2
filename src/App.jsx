@@ -1,5 +1,5 @@
  /* eslint-disable no-unused-vars */
- import React, { useReducer } from "react";
+ import { useReducer } from "react";
  import DigitButton from "./DigitButton";
  import OperationButton from "./OperationButton";
  import "./style.css";
