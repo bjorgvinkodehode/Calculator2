@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import './ThemeSelector.css'; // Add styles specific to the ThemeSelector
+import { useState, useEffect } from 'react';
+import './ThemeSelector.css'; // Importing styles specific to the ThemeSelector
 
+// ThemeSelector component definition
 function ThemeSelector() {
-  const [theme, setTheme] = useState('1');
+  const [theme, setTheme] = useState("1"); 
 
   useEffect(() => {
     applyTheme(theme);
@@ -10,54 +11,38 @@ function ThemeSelector() {
 
   function applyTheme(selectedTheme) {
     const link = document.getElementById('theme-link');
-    link.href = `${selectedTheme}-theme.css`;
+    if (selectedTheme === "1") {
+      link.href = "Style.css";
+    } else {
+      link.href = `${selectedTheme}-theme.css`;
+    }
   }
 
+ 
   function handleThemeChange(event) {
     setTheme(event.target.value);
   }
 
   return (
     <div className="theme-selector">
-      <div className="radio-group">
-        <label htmlFor="theme1">1</label>
+      <span className="theme-label">Theme</span>
+      <div className="slider-container">
+        <div className="slider-numbers">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
         <input
-          type="radio"
-          name="theme"
-          value="1"
-          id="theme1"
-          checked={theme === '1'}
+          type="range"
+          min="1"
+          max="3"
+          value={theme}
           onChange={handleThemeChange}
         />
       </div>
-
-      <div className="radio-group">
-        <label htmlFor="theme2">2</label>
-        <input
-          type="radio"
-          name="theme"
-          value="2"
-          id="theme2"
-          checked={theme === '2'}
-          onChange={handleThemeChange}
-        />
-      </div>
-
-      <div className="radio-group">
-        <label htmlFor="theme3">3</label>
-        <input
-          type="radio"
-          name="theme"
-          value="3"
-          id="theme3"
-          checked={theme === '3'}
-          onChange={handleThemeChange}
-        />
-      </div>
-
-      <link id="theme-link" rel="style" href="" />
     </div>
   );
 }
 
+// Export ThemeSelector component
 export default ThemeSelector;

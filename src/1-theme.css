@@ -9,6 +9,7 @@
 }
 :root {
   font-family: "League Spartan", sans-serif;
+
   background-color: var(--clr-Theme1Verydarkdesaturatedbluemainbackground);
   /* numbers */
   --font-size: 32px;
@@ -23,17 +24,17 @@
   --clr-Theme1Verydarkdesaturatedbluescreenbackground: hsl(224, 36%, 15%);
 
   /* colors for Keys */
-  --clr-Theme1Desaturateddarkbluekeybackground: hsl(225, 21%, 49%);
-  --clr-Theme1Desaturateddarkbluekeyshadow: hsl(224, 28%, 35%);
+  --clr-Theme1Desaturateddarkbluekeybackground: #a3b3e2;
+  --clr-Theme1Desaturateddarkbluekeyshadow: #414d74;
 
-  --clr-Theme1Redkeybackgroundtoggle: hsl(6, 63%, 50%);
-  --clr-Theme1Darkredkeyshadow: hsl(6, 70%, 34%);
+  --clr-Theme1Redkeybackgroundtoggle: #f96c5c;
+  --clr-Theme1Darkredkeyshadow: #902218;
 
-  --clr-Theme1Lightgrayishorangekeybackground: hsl(30, 25%, 89%);
-  --clr-Theme1Grayishorangekeyshadow: hsl(28, 16%, 65%);
+  --clr-Theme1Lightgrayishorangekeybackground: #e9e3db;
+  --clr-Theme1Grayishorangekeyshadow: #b3a18e;
 
   /* colors for text */
-  --clr-Theme1Verydarkgrayishblue: hsl(221, 14%, 31%);
+  --clr-Theme1Verydarkgrayishblue: #414658;
   --clr-White: hsl(0, 0%, 100%);
 
   /* colors for Backgrounds Theme 2 */
@@ -81,20 +82,20 @@
   display: grid;
   grid-template-columns: repeat(4, fr);
   gap: 10px;
-  max-width: 300px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
 .output {
   grid-column: span 4;
   display: flex;
-  flex-direction: fixed;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: flex-end;
-  background-color: var(--clr-Theme2Darkmoderatecyankeybackground);
+  background-color: var(--clr-Theme1Verydarkdesaturatedbluescreenbackground);
   color: var(--clr-White);
-  padding: 10px;
-  border-radius: 5px;
+  padding: 17px;
+  border-radius: 7px;
   overflow: hidden;
 }
 
@@ -106,38 +107,45 @@ h3 {
   background-color: var(
     --clr-Theme1Verydarkdesaturatedbluetogglebackgroundkeypadbackground
   );
-  color: var(--clr-Theme1Verydarkgrayishblue);
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column: span 4;
-  gap: 10px;
-  border-radius: 5px;
+  gap: 13px;
+  border-radius: 7px;
+  font-size: 22px;
 }
 
 button {
-  box-shadow: 0px 1px 0px var(--clr-Theme1Grayishorangekeyshadow);
+  box-shadow: 0px 2px 0px var(--clr-Theme1Grayishorangekeyshadow);
+  background-color: var(--clr-Theme1Lightgrayishorangekeybackground);
   padding: 10px;
-
-  border-radius: 5px;
+  border-radius: 7px;
+  color: var(--clr-Theme1Verydarkgrayishblue);
 }
 
-.button-span-two {
+.button-span-two-red,
+.button-span-two-blue {
   grid-column: span 2;
 }
 
+.button-span-two-red {
+  background-color: var(--clr-Theme1Redkeybackgroundtoggle);
+  color: var(--clr-White);
+  box-shadow: 0px 2px 0px var(--clr-Theme1Darkredkeyshadow);
+}
+.button-span-two-blue,
+.del {
+  background-color: var(--clr-Theme1Desaturateddarkbluekeybackground);
+  color: var(--clr-White);
+  box-shadow: 0px 2px 0px var(--clr-Theme1Desaturateddarkbluekeyshadow);
+}
+
+.current-operand,
 .previous-operand {
   font-size: var(--font-size);
   color: var(--clr-White);
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.current-operand {
-  font-size: var(--font-size);
-  color: var(--clr-White);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 3px;
   max-width: 280px;
 }

@@ -18,14 +18,13 @@
  
    return (
      <div className="calculator-grid">
-      <div className="theme">
+      <div className="theme-selector">
         <h3 className="calc">calc</h3>
-        <h3 className="theme">Theme</h3>
         <ThemeSelector />
       </div>
        <div className="output">
          <div className="previous-operand">
-           {formatOperand(previousOperand)} {operation}
+           {formatOperand(previousOperand)}{operation}
          </div>
          <div className="current-operand">{formatOperand(currentOperand)}</div>
        </div>
