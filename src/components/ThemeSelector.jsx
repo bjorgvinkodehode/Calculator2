@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import './ThemeSelector.css'; // Importing styles specific to the ThemeSelector
+import './ThemeSelector.css'; 
 
-// ThemeSelector component definition
+
 function ThemeSelector() {
   const [theme, setTheme] = useState("1"); 
 
@@ -12,9 +12,9 @@ function ThemeSelector() {
   function applyTheme(selectedTheme) {
     const link = document.getElementById('theme-link');
     if (selectedTheme === "1") {
-      link.href = "Style.css";
+      link.href = "Style.css";  // This should be your default stylesheet
     } else {
-      link.href = `${selectedTheme}-theme.css`;
+      link.href = `${selectedTheme}-theme.css`;  // Make sure these theme files actually exist
     }
   }
 
@@ -44,5 +44,5 @@ function ThemeSelector() {
   );
 }
 
-// Export ThemeSelector component
+
 export default ThemeSelector;

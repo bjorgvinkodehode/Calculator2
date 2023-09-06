@@ -4,9 +4,9 @@
  import OperationButton from "./OperationButton";
  import "./style.css";
  import ThemeSelector from './components/ThemeSelector';
- import { ACTIONS } from './calculatorActions';
  import { reducer } from './calculatorReducer';
  import { formatOperand } from './calculatorFormatting';
+ import { ACTIONS } from "./calculatorActions";
  
  
 

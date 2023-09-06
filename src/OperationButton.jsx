@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ACTIONS } from './calculatorActions';  // Import ACTIONS from your actions file
+import { ACTIONS } from "./calculatorActions";
 
 const OperationButton = ({ operation, dispatch }) => {
   return (

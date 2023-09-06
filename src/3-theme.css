@@ -1,38 +1,19 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
-
 :root {
   font-family: "League Spartan", sans-serif;
   background-color: var(--clr-Theme3Verydarkvioletmainbackground);
   --font-size: 32px;
-
-  /* Colors for Backgrounds Theme 3 */
   --clr-Theme3Verydarkvioletmainbackground: hsl(268, 75%, 9%);
   --clr-Theme3Verydarkviolettogglebackgroundkeypadbackgroundscreenbackground: hsl(
     268,
     71%,
     12%
   );
-
-  /* Colors for Keys */
   --clr-Theme3Darkvioletkeybackground: hsl(281, 89%, 26%);
   --clr-Theme3Vividmagentakeyshadow: hsl(285, 91%, 52%);
-
   --clr-Theme3Purecyankeybackgroundtoggle: hsl(176, 100%, 44%);
   --clr-Theme3Softcyankeyshadow: hsl(177, 92%, 70%);
-
   --clr-Theme3Verydarkvioletkeybackground: hsl(268, 47%, 21%);
   --clr-Theme3Darkmagentakeyshadow: hsl(290, 70%, 36%);
-
-  /* Colors for Text */
   --clr-Theme3Lightyellow: hsl(52, 100%, 62%);
   --clr-Theme3Verydarkblue: hsl(198, 20%, 13%);
 }
